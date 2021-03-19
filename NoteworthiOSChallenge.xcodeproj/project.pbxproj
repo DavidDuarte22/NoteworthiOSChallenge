@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05F21E07260527D100860412 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E06260527D100860412 /* AppDelegate.swift */; };
+		05F21E09260527D100860412 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E08260527D100860412 /* SceneDelegate.swift */; };
+		05F21E0B260527D100860412 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E0A260527D100860412 /* ViewController.swift */; };
+		05F21E0E260527D100860412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F21E0C260527D100860412 /* Main.storyboard */; };
+		05F21E10260527D200860412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F21E0F260527D200860412 /* Assets.xcassets */; };
+		05F21E13260527D200860412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F21E11260527D200860412 /* LaunchScreen.storyboard */; };
+		05F21E1E260527D200860412 /* NoteworthiOSChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E1D260527D200860412 /* NoteworthiOSChallengeTests.swift */; };
+		05F21E29260527D200860412 /* NoteworthiOSChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E28260527D200860412 /* NoteworthiOSChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05F21E1A260527D200860412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05F21DFB260527D100860412 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05F21E02260527D100860412;
+			remoteInfo = NoteworthiOSChallenge;
+		};
+		05F21E25260527D200860412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05F21DFB260527D100860412 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05F21E02260527D100860412;
+			remoteInfo = NoteworthiOSChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05F21E03260527D100860412 /* NoteworthiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteworthiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05F21E06260527D100860412 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		05F21E08260527D100860412 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		05F21E0A260527D100860412 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		05F21E0D260527D100860412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05F21E0F260527D200860412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05F21E12260527D200860412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05F21E14260527D200860412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F21E19260527D200860412 /* NoteworthiOSChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteworthiOSChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05F21E1D260527D200860412 /* NoteworthiOSChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteworthiOSChallengeTests.swift; sourceTree = "<group>"; };
+		05F21E1F260527D200860412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F21E24260527D200860412 /* NoteworthiOSChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteworthiOSChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05F21E28260527D200860412 /* NoteworthiOSChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteworthiOSChallengeUITests.swift; sourceTree = "<group>"; };
+		05F21E2A260527D200860412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05F21E00260527D100860412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05F21E16260527D200860412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05F21E21260527D200860412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05F21DFA260527D100860412 = {
+			isa = PBXGroup;
+			children = (
+				05F21E05260527D100860412 /* NoteworthiOSChallenge */,
+				05F21E1C260527D200860412 /* NoteworthiOSChallengeTests */,
+				05F21E27260527D200860412 /* NoteworthiOSChallengeUITests */,
+				05F21E04260527D100860412 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05F21E04260527D100860412 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05F21E03260527D100860412 /* NoteworthiOSChallenge.app */,
+				05F21E19260527D200860412 /* NoteworthiOSChallengeTests.xctest */,
+				05F21E24260527D200860412 /* NoteworthiOSChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05F21E05260527D100860412 /* NoteworthiOSChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				05F21E06260527D100860412 /* AppDelegate.swift */,
+				05F21E08260527D100860412 /* SceneDelegate.swift */,
+				05F21E0A260527D100860412 /* ViewController.swift */,
+				05F21E0C260527D100860412 /* Main.storyboard */,
+				05F21E0F260527D200860412 /* Assets.xcassets */,
+				05F21E11260527D200860412 /* LaunchScreen.storyboard */,
+				05F21E14260527D200860412 /* Info.plist */,
+			);
+			path = NoteworthiOSChallenge;
+			sourceTree = "<group>";
+		};
+		05F21E1C260527D200860412 /* NoteworthiOSChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				05F21E1D260527D200860412 /* NoteworthiOSChallengeTests.swift */,
+				05F21E1F260527D200860412 /* Info.plist */,
+			);
+			path = NoteworthiOSChallengeTests;
+			sourceTree = "<group>";
+		};
+		05F21E27260527D200860412 /* NoteworthiOSChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				05F21E28260527D200860412 /* NoteworthiOSChallengeUITests.swift */,
+				05F21E2A260527D200860412 /* Info.plist */,
+			);
+			path = NoteworthiOSChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05F21E02260527D100860412 /* NoteworthiOSChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05F21E2D260527D200860412 /* Build configuration list for PBXNativeTarget "NoteworthiOSChallenge" */;
+			buildPhases = (
+				05F21DFF260527D100860412 /* Sources */,
+				05F21E00260527D100860412 /* Frameworks */,
+				05F21E01260527D100860412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoteworthiOSChallenge;
+			productName = NoteworthiOSChallenge;
+			productReference = 05F21E03260527D100860412 /* NoteworthiOSChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05F21E18260527D200860412 /* NoteworthiOSChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05F21E30260527D200860412 /* Build configuration list for PBXNativeTarget "NoteworthiOSChallengeTests" */;
+			buildPhases = (
+				05F21E15260527D200860412 /* Sources */,
+				05F21E16260527D200860412 /* Frameworks */,
+				05F21E17260527D200860412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05F21E1B260527D200860412 /* PBXTargetDependency */,
+			);
+			name = NoteworthiOSChallengeTests;
+			productName = NoteworthiOSChallengeTests;
+			productReference = 05F21E19260527D200860412 /* NoteworthiOSChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05F21E23260527D200860412 /* NoteworthiOSChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05F21E33260527D200860412 /* Build configuration list for PBXNativeTarget "NoteworthiOSChallengeUITests" */;
+			buildPhases = (
+				05F21E20260527D200860412 /* Sources */,
+				05F21E21260527D200860412 /* Frameworks */,
+				05F21E22260527D200860412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05F21E26260527D200860412 /* PBXTargetDependency */,
+			);
+			name = NoteworthiOSChallengeUITests;
+			productName = NoteworthiOSChallengeUITests;
+			productReference = 05F21E24260527D200860412 /* NoteworthiOSChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05F21DFB260527D100860412 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					05F21E02260527D100860412 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					05F21E18260527D200860412 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 05F21E02260527D100860412;
+					};
+					05F21E23260527D200860412 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 05F21E02260527D100860412;
+					};
+				};
+			};
+			buildConfigurationList = 05F21DFE260527D100860412 /* Build configuration list for PBXProject "NoteworthiOSChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05F21DFA260527D100860412;
+			productRefGroup = 05F21E04260527D100860412 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05F21E02260527D100860412 /* NoteworthiOSChallenge */,
+				05F21E18260527D200860412 /* NoteworthiOSChallengeTests */,
+				05F21E23260527D200860412 /* NoteworthiOSChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05F21E01260527D100860412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F21E13260527D200860412 /* LaunchScreen.storyboard in Resources */,
+				05F21E10260527D200860412 /* Assets.xcassets in Resources */,
+				05F21E0E260527D100860412 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05F21E17260527D200860412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05F21E22260527D200860412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05F21DFF260527D100860412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F21E0B260527D100860412 /* ViewController.swift in Sources */,
+				05F21E07260527D100860412 /* AppDelegate.swift in Sources */,
+				05F21E09260527D100860412 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05F21E15260527D200860412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F21E1E260527D200860412 /* NoteworthiOSChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05F21E20260527D200860412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F21E29260527D200860412 /* NoteworthiOSChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05F21E1B260527D200860412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05F21E02260527D100860412 /* NoteworthiOSChallenge */;
+			targetProxy = 05F21E1A260527D200860412 /* PBXContainerItemProxy */;
+		};
+		05F21E26260527D200860412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05F21E02260527D100860412 /* NoteworthiOSChallenge */;
+			targetProxy = 05F21E25260527D200860412 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05F21E0C260527D100860412 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05F21E0D260527D100860412 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		05F21E11260527D200860412 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05F21E12260527D200860412 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05F21E2B260527D200860412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05F21E2C260527D200860412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05F21E2E260527D200860412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4V2VGAFSZ2;
+				INFOPLIST_FILE = NoteworthiOSChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidduarte.NoteworthiOSChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05F21E2F260527D200860412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4V2VGAFSZ2;
+				INFOPLIST_FILE = NoteworthiOSChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidduarte.NoteworthiOSChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05F21E31260527D200860412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4V2VGAFSZ2;
+				INFOPLIST_FILE = NoteworthiOSChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidduarte.NoteworthiOSChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteworthiOSChallenge.app/NoteworthiOSChallenge";
+			};
+			name = Debug;
+		};
+		05F21E32260527D200860412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4V2VGAFSZ2;
+				INFOPLIST_FILE = NoteworthiOSChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidduarte.NoteworthiOSChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteworthiOSChallenge.app/NoteworthiOSChallenge";
+			};
+			name = Release;
+		};
+		05F21E34260527D200860412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4V2VGAFSZ2;
+				INFOPLIST_FILE = NoteworthiOSChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidduarte.NoteworthiOSChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NoteworthiOSChallenge;
+			};
+			name = Debug;
+		};
+		05F21E35260527D200860412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4V2VGAFSZ2;
+				INFOPLIST_FILE = NoteworthiOSChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidduarte.NoteworthiOSChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NoteworthiOSChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05F21DFE260527D100860412 /* Build configuration list for PBXProject "NoteworthiOSChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05F21E2B260527D200860412 /* Debug */,
+				05F21E2C260527D200860412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05F21E2D260527D200860412 /* Build configuration list for PBXNativeTarget "NoteworthiOSChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05F21E2E260527D200860412 /* Debug */,
+				05F21E2F260527D200860412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05F21E30260527D200860412 /* Build configuration list for PBXNativeTarget "NoteworthiOSChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05F21E31260527D200860412 /* Debug */,
+				05F21E32260527D200860412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05F21E33260527D200860412 /* Build configuration list for PBXNativeTarget "NoteworthiOSChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05F21E34260527D200860412 /* Debug */,
+				05F21E35260527D200860412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05F21DFB260527D100860412 /* Project object */;
+}
