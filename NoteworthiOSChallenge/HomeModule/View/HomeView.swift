@@ -21,10 +21,18 @@ class HomeView: UIViewController {
     }
     
     override func viewDidLoad() {
+        self.presenter.getPosts()
+        
         setViewProperties()
         addSubviewsAndConstraints()
-        
         self.dismissButton.addTarget(self, action: #selector(dismissAllTapped), for: .touchUpInside)
+
+        self.presenter.postsObservable.bind { _ in
+            DispatchQueue.main.async {
+                self.refreshControl.endRefreshing()
+                self.tableView.reloadData()
+            }
+        }
     }
     
     // MARK: View Properties
@@ -73,11 +81,16 @@ class HomeView: UIViewController {
 extension HomeView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return  10
+        if let postCount = self.presenter.postsObservable.value?.count, postCount > 0 {
+            
+            return postCount
+        }
+        return  0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.presenter.getPostCell() as! PostCell
+        guard let posts = self.presenter.postsObservable.value else { return UITableViewCell() }
+        let cell = self.presenter.getPostCell(post: posts[indexPath.row]) as! PostCell
         cell.contentView.isUserInteractionEnabled = false
         cell.selectionStyle = .none
         cell.delegate = self

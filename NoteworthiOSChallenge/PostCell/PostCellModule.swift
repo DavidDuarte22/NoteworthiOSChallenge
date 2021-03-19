@@ -9,15 +9,16 @@ import UIKit
 
 class PostCellModule {
     // TODO: Fix dependency injection
-    static func build() -> UITableViewCell {
+    static func build(post: PostEntity) -> UITableViewCell {
         
-        let presenter = PostCellPresenter()
-        let view = PostCell(presenter: presenter)
+        let presenter = PostCellPresenter(post: post)
         let router = PostCellRouter()
         let interactor = PostCellInteractor()
         
         presenter.postCellRouter = router
         presenter.postCellInteractor = interactor
+        
+        let view = PostCell(presenter: presenter)
         
         return view
     }

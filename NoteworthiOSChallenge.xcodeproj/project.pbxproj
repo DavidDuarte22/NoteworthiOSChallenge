@@ -24,6 +24,8 @@
 		05F21E8526052FDA00860412 /* PostCellRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E8426052FDA00860412 /* PostCellRouter.swift */; };
 		05F21E8D26052FEF00860412 /* PostCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E8C26052FEF00860412 /* PostCellPresenter.swift */; };
 		05F21E922605302100860412 /* PostCellInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E912605302100860412 /* PostCellInteractor.swift */; };
+		05F21E9D2605372D00860412 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E9C2605372D00860412 /* Observable.swift */; };
+		05F21EA2260537B400860412 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21EA1260537B400860412 /* PostEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		05F21E8426052FDA00860412 /* PostCellRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellRouter.swift; sourceTree = "<group>"; };
 		05F21E8C26052FEF00860412 /* PostCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellPresenter.swift; sourceTree = "<group>"; };
 		05F21E912605302100860412 /* PostCellInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellInteractor.swift; sourceTree = "<group>"; };
+		05F21E9C2605372D00860412 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		05F21EA1260537B400860412 /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 		05F21E422605293800860412 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				05F21EA1260537B400860412 /* PostEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				05F21E6726052C4300860412 /* Extensions */,
+				05F21E9C2605372D00860412 /* Observable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -414,8 +420,10 @@
 				05F21E07260527D100860412 /* AppDelegate.swift in Sources */,
 				05F21E5A260529E900860412 /* HomeInteractor.swift in Sources */,
 				05F21E8D26052FEF00860412 /* PostCellPresenter.swift in Sources */,
+				05F21E9D2605372D00860412 /* Observable.swift in Sources */,
 				05F21E55260529BF00860412 /* HomePresenter.swift in Sources */,
 				05F21E8526052FDA00860412 /* PostCellRouter.swift in Sources */,
+				05F21EA2260537B400860412 /* PostEntity.swift in Sources */,
 				05F21E09260527D100860412 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

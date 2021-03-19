@@ -8,11 +8,17 @@
 import UIKit
 
 protocol PostCellPresenterInterface {
-    
+    var post: Observable<PostEntity> { get set }
 }
 
 class PostCellPresenter: PostCellPresenterInterface {
     
     var postCellRouter: PostCellRouterInterface?
     var postCellInteractor: PostCellInteractorInterface?
+    
+    var post: Observable<PostEntity>
+    
+    init(post: PostEntity) {
+        self.post = Observable<PostEntity>(post)
+    }
 }

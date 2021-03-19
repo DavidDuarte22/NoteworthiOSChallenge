@@ -47,7 +47,7 @@ class PostCell: UITableViewCell {
 
         self.authorLabel = {
             let label = UILabel ()
-            label.text = "washedupwornout"
+            label.text = self.presenter.post.value.author
             return label
         }()
         
@@ -61,7 +61,7 @@ class PostCell: UITableViewCell {
             let label = UILabel ()
             label.lineBreakMode = NSLineBreakMode.byWordWrapping
             label.numberOfLines = 0
-            label.text = "Man trying to return a dog's toy gets tricked into playing fetch"
+            label.text = self.presenter.post.value.title
             label.sizeToFit()
             return label
         }()
@@ -88,7 +88,7 @@ class PostCell: UITableViewCell {
         self.numComments = {
             let label = UILabel ()
             label.textColor = .orange
-            label.text = "2000 comments"
+            label.text = "\(self.presenter.post.value.numberComments) comments"
             return label
         }()
         
