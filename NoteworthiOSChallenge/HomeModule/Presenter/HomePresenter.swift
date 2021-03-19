@@ -16,4 +16,7 @@ class HomePresenter: HomePresenterInterface {
     var homeRouter: HomeRouterInterface?
     var homeInteractor: HomeInteractorInterface?
     
+    // MARK: View Properties
+    var tableView: UITableView!
+    var dismissButton: UIButton!
 }
