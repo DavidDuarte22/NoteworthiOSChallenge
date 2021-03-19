@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		05F21E07260527D100860412 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E06260527D100860412 /* AppDelegate.swift */; };
 		05F21E09260527D100860412 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E08260527D100860412 /* SceneDelegate.swift */; };
-		05F21E0B260527D100860412 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E0A260527D100860412 /* ViewController.swift */; };
-		05F21E0E260527D100860412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F21E0C260527D100860412 /* Main.storyboard */; };
 		05F21E10260527D200860412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F21E0F260527D200860412 /* Assets.xcassets */; };
 		05F21E13260527D200860412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F21E11260527D200860412 /* LaunchScreen.storyboard */; };
 		05F21E1E260527D200860412 /* NoteworthiOSChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E1D260527D200860412 /* NoteworthiOSChallengeTests.swift */; };
 		05F21E29260527D200860412 /* NoteworthiOSChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E28260527D200860412 /* NoteworthiOSChallengeUITests.swift */; };
+		05F21E482605296300860412 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E472605296300860412 /* HomeModule.swift */; };
+		05F21E502605298D00860412 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E4F2605298D00860412 /* HomeRouter.swift */; };
+		05F21E55260529BF00860412 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E54260529BF00860412 /* HomePresenter.swift */; };
+		05F21E5A260529E900860412 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E59260529E900860412 /* HomeInteractor.swift */; };
+		05F21E5F26052A0D00860412 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E5E26052A0D00860412 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,6 @@
 		05F21E03260527D100860412 /* NoteworthiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteworthiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F21E06260527D100860412 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05F21E08260527D100860412 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		05F21E0A260527D100860412 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		05F21E0D260527D100860412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05F21E0F260527D200860412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05F21E12260527D200860412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05F21E14260527D200860412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,11 @@
 		05F21E24260527D200860412 /* NoteworthiOSChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteworthiOSChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F21E28260527D200860412 /* NoteworthiOSChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteworthiOSChallengeUITests.swift; sourceTree = "<group>"; };
 		05F21E2A260527D200860412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F21E472605296300860412 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		05F21E4F2605298D00860412 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		05F21E54260529BF00860412 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		05F21E59260529E900860412 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		05F21E5E26052A0D00860412 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,8 @@
 		05F21E05260527D100860412 /* NoteworthiOSChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				05F21E06260527D100860412 /* AppDelegate.swift */,
-				05F21E08260527D100860412 /* SceneDelegate.swift */,
-				05F21E0A260527D100860412 /* ViewController.swift */,
-				05F21E0C260527D100860412 /* Main.storyboard */,
-				05F21E0F260527D200860412 /* Assets.xcassets */,
-				05F21E11260527D200860412 /* LaunchScreen.storyboard */,
-				05F21E14260527D200860412 /* Info.plist */,
+				05F21E402605292A00860412 /* HomeModule */,
+				05F21E3C2605289600860412 /* SupportingFiles */,
 			);
 			path = NoteworthiOSChallenge;
 			sourceTree = "<group>";
@@ -126,6 +127,70 @@
 				05F21E2A260527D200860412 /* Info.plist */,
 			);
 			path = NoteworthiOSChallengeUITests;
+			sourceTree = "<group>";
+		};
+		05F21E3C2605289600860412 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				05F21E11260527D200860412 /* LaunchScreen.storyboard */,
+				05F21E06260527D100860412 /* AppDelegate.swift */,
+				05F21E08260527D100860412 /* SceneDelegate.swift */,
+				05F21E14260527D200860412 /* Info.plist */,
+				05F21E0F260527D200860412 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		05F21E402605292A00860412 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				05F21E452605294A00860412 /* View */,
+				05F21E442605294400860412 /* Interactor */,
+				05F21E432605293F00860412 /* Presenter */,
+				05F21E422605293800860412 /* Entity */,
+				05F21E412605293100860412 /* Router */,
+				05F21E472605296300860412 /* HomeModule.swift */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		05F21E412605293100860412 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				05F21E4F2605298D00860412 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		05F21E422605293800860412 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		05F21E432605293F00860412 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				05F21E54260529BF00860412 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		05F21E442605294400860412 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				05F21E59260529E900860412 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		05F21E452605294A00860412 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05F21E5E26052A0D00860412 /* HomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +298,6 @@
 			files = (
 				05F21E13260527D200860412 /* LaunchScreen.storyboard in Resources */,
 				05F21E10260527D200860412 /* Assets.xcassets in Resources */,
-				05F21E0E260527D100860412 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +322,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05F21E0B260527D100860412 /* ViewController.swift in Sources */,
+				05F21E482605296300860412 /* HomeModule.swift in Sources */,
+				05F21E5F26052A0D00860412 /* HomeView.swift in Sources */,
+				05F21E502605298D00860412 /* HomeRouter.swift in Sources */,
 				05F21E07260527D100860412 /* AppDelegate.swift in Sources */,
+				05F21E5A260529E900860412 /* HomeInteractor.swift in Sources */,
+				05F21E55260529BF00860412 /* HomePresenter.swift in Sources */,
 				05F21E09260527D100860412 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +364,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		05F21E0C260527D100860412 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05F21E0D260527D100860412 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		05F21E11260527D200860412 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,7 +498,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4V2VGAFSZ2;
-				INFOPLIST_FILE = NoteworthiOSChallenge/Info.plist;
+				INFOPLIST_FILE = NoteworthiOSChallenge/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +506,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = davidduarte.NoteworthiOSChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -457,7 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4V2VGAFSZ2;
-				INFOPLIST_FILE = NoteworthiOSChallenge/Info.plist;
+				INFOPLIST_FILE = NoteworthiOSChallenge/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +525,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = davidduarte.NoteworthiOSChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
