@@ -117,8 +117,8 @@
 		05F21E05260527D100860412 /* NoteworthiOSChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				05F21E7026052EB300860412 /* PostCell */,
 				05F21E6626052C3B00860412 /* Utils */,
+				05F21E7026052EB300860412 /* PostCell */,
 				05F21E402605292A00860412 /* HomeModule */,
 				05F21E3C2605289600860412 /* SupportingFiles */,
 			);

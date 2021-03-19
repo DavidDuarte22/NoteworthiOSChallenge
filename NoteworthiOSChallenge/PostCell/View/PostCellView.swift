@@ -7,15 +7,22 @@
 
 import UIKit
 
+protocol PostCellDelegate:class {
+    func cellTapped(row: Int)
+    func navigateToDetail(row: Int)
+}
+
 class PostCell: UITableViewCell {
     
     let presenter: PostCellPresenterInterface
-    
+    weak var delegate: PostCellDelegate?
+
     init(presenter: PostCellPresenterInterface) {
         self.presenter = presenter
         super.init(style: .default, reuseIdentifier: nil)
         setViewProperties()
         addSubviewsAndConstraints()
+        setupDelegateGestures()
     }
    
     required init?(coder: NSCoder) {
@@ -126,5 +133,24 @@ class PostCell: UITableViewCell {
         self.goDetailFrame.anchor(top: nil, leading: nil, bottom: nil, trailing: self.safeAreaLayoutGuide.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 10))
         self.goDetailFrame.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
 
+    }
+    
+    // MARK: Actions
+    /// Using label gesture recognizer instead of tableview delegate for a better user experience
+    @objc func labelTapped(_ sender: UITapGestureRecognizer) {
+        delegate?.navigateToDetail(row: self.tag)
+    }
+    
+    @objc func dismissTapped(sender: UIButton) {
+        delegate?.cellTapped(row: self.tag)
+    }
+    
+    func setupDelegateGestures() {
+        self.dismissButton.addTarget(self, action: #selector(dismissTapped), for: .touchUpInside)
+        let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.labelTapped(_:)))
+        self.titleLabel.isUserInteractionEnabled = true
+        self.goDetailFrame.isUserInteractionEnabled = true
+        self.titleLabel.addGestureRecognizer(labelTap)
+        self.goDetailFrame.addGestureRecognizer(labelTap)
     }
 }

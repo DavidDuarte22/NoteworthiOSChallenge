@@ -23,6 +23,8 @@ class HomeView: UIViewController {
     override func viewDidLoad() {
         setViewProperties()
         addSubviewsAndConstraints()
+        
+        self.dismissButton.addTarget(self, action: #selector(dismissAllTapped), for: .touchUpInside)
     }
     
     // MARK: View Properties
@@ -61,6 +63,11 @@ class HomeView: UIViewController {
         self.dismissButton.anchor(top: nil, leading: self.view.safeAreaLayoutGuide.leadingAnchor, bottom: self.view.safeAreaLayoutGuide.bottomAnchor, trailing: self.view.safeAreaLayoutGuide.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: 0, height: 50))
     }
     
+    // MARK: Actions
+    @objc func dismissAllTapped(sender: UIButton) {
+        // TODO:
+        print("Remove all rows")
+    }
 }
 
 extension HomeView: UITableViewDelegate, UITableViewDataSource {
@@ -71,6 +78,23 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.presenter.getPostCell() as! PostCell
+        cell.contentView.isUserInteractionEnabled = false
+        cell.selectionStyle = .none
+        cell.delegate = self
+        cell.tag = indexPath.row
         return cell
+    }
+}
+
+// MARK: Cell Delegate actions
+extension HomeView: PostCellDelegate {
+    func navigateToDetail(row: Int) {
+        // TODO:
+        print("Navigate to Detail at row: \(row)")
+    }
+    
+    func cellTapped(row: Int) {
+        // TODO:
+        print("Remove row: \(row)")
     }
 }
