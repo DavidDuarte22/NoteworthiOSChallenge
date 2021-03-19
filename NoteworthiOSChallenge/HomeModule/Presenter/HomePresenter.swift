@@ -11,7 +11,9 @@ protocol HomePresenterInterface {
     func getPosts()
     func getPostCell(post: PostEntity) -> UITableViewCell
     func getPostDetail(post: PostEntity)
-    
+    func removeCell(at row: Int)
+    func removeAllCells()
+
     var postsObservable: Observable<[PostEntity]?> { get set }
 }
 
@@ -42,5 +44,13 @@ class HomePresenter: HomePresenterInterface {
     
     func getPostDetail(post: PostEntity) {
         self.homeRouter?.navigateToDetail(post: post)
+    }
+    
+    func removeCell(at row: Int) {
+        self.postsObservable.value?.remove(at: row)
+    }
+    
+    func removeAllCells() {
+        self.postsObservable.value?.removeAll()
     }
 }

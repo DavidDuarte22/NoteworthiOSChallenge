@@ -25,7 +25,10 @@ class HomeView: UIViewController {
         
         setViewProperties()
         addSubviewsAndConstraints()
+        
         self.dismissButton.addTarget(self, action: #selector(dismissAllTapped), for: .touchUpInside)
+        self.refreshControl.addTarget(self, action: #selector(refreshPostsData(_:)), for: .valueChanged)
+
 
         self.presenter.postsObservable.bind { _ in
             DispatchQueue.main.async {
@@ -51,6 +54,7 @@ class HomeView: UIViewController {
         
         self.tableView = {
             let tableView = UITableView()
+            tableView.refreshControl = refreshControl
             return tableView
         }()
         
@@ -73,8 +77,13 @@ class HomeView: UIViewController {
     
     // MARK: Actions
     @objc func dismissAllTapped(sender: UIButton) {
-        // TODO:
-        print("Remove all rows")
+        self.presenter.removeAllCells()
+        self.tableView.dataSource = .none
+    }
+    
+    @objc private func refreshPostsData(_ sender: Any) {
+        self.presenter.getPosts()
+        self.tableView.dataSource = self
     }
 }
 
@@ -107,7 +116,8 @@ extension HomeView: PostCellDelegate {
     }
     
     func dismissButtonTapped(row: Int) {
-        // TODO:
-        print("Remove row: \(row)")
+        let indexPath = IndexPath(row: row, section: 0)
+        self.presenter.removeCell(at: row)
+        self.tableView.deleteRows(at: [indexPath], with: .automatic)
     }
 }
