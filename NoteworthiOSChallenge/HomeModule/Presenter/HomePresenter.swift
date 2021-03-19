@@ -8,7 +8,8 @@
 import UIKit
 
 protocol HomePresenterInterface {
-    
+    func getPostCell() -> UITableViewCell
+
 }
 
 class HomePresenter: HomePresenterInterface {
@@ -19,4 +20,9 @@ class HomePresenter: HomePresenterInterface {
     // MARK: View Properties
     var tableView: UITableView!
     var dismissButton: UIButton!
+    
+    func getPostCell() -> UITableViewCell {
+        let cell = PostCellModule.build()
+        return cell
+    }
 }
