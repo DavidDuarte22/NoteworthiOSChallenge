@@ -32,6 +32,9 @@
 		05F21ECE260540E400860412 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21ECD260540E400860412 /* DetailInteractor.swift */; };
 		05F21ED3260540EC00860412 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21ED2260540EC00860412 /* DetailView.swift */; };
 		05F21EDE26054DF400860412 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21EDD26054DF400860412 /* UIImage+Extension.swift */; };
+		05F21EE62605525B00860412 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21EE52605525B00860412 /* NetworkManager.swift */; };
+		05F21EEB260552B000860412 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21EEA260552B000860412 /* ErrorManager.swift */; };
+		05F21EF826055FE800860412 /* JsonResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21EF726055FE800860412 /* JsonResponseEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		05F21ECD260540E400860412 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		05F21ED2260540EC00860412 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		05F21EDD26054DF400860412 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		05F21EE52605525B00860412 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		05F21EEA260552B000860412 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		05F21EF726055FE800860412 /* JsonResponseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonResponseEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				05F21EA1260537B400860412 /* PostEntity.swift */,
+				05F21EF726055FE800860412 /* JsonResponseEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -230,6 +237,8 @@
 			children = (
 				05F21E6726052C4300860412 /* Extensions */,
 				05F21E9C2605372D00860412 /* Observable.swift */,
+				05F21EE52605525B00860412 /* NetworkManager.swift */,
+				05F21EEA260552B000860412 /* ErrorManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -480,6 +489,8 @@
 				05F21E482605296300860412 /* HomeModule.swift in Sources */,
 				05F21E922605302100860412 /* PostCellInteractor.swift in Sources */,
 				05F21E5F26052A0D00860412 /* HomeView.swift in Sources */,
+				05F21EF826055FE800860412 /* JsonResponseEntity.swift in Sources */,
+				05F21EE62605525B00860412 /* NetworkManager.swift in Sources */,
 				05F21E7726052FB700860412 /* PostCellModule.swift in Sources */,
 				05F21E6926052C5500860412 /* UIView+Extension.swift in Sources */,
 				05F21EAB2605409A00860412 /* DetailModule.swift in Sources */,
@@ -492,6 +503,7 @@
 				05F21ED3260540EC00860412 /* DetailView.swift in Sources */,
 				05F21E9D2605372D00860412 /* Observable.swift in Sources */,
 				05F21EDE26054DF400860412 /* UIImage+Extension.swift in Sources */,
+				05F21EEB260552B000860412 /* ErrorManager.swift in Sources */,
 				05F21E55260529BF00860412 /* HomePresenter.swift in Sources */,
 				05F21E8526052FDA00860412 /* PostCellRouter.swift in Sources */,
 				05F21EB8260540BF00860412 /* DetailRouter.swift in Sources */,
