@@ -102,11 +102,11 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
 // MARK: Cell Delegate actions
 extension HomeView: PostCellDelegate {
     func navigateToDetail(row: Int) {
-        // TODO:
-        print("Navigate to Detail at row: \(row)")
+        guard let posts = self.presenter.postsObservable.value else { return }
+        self.presenter.getPostDetail(post: posts[row])
     }
     
-    func cellTapped(row: Int) {
+    func dismissButtonTapped(row: Int) {
         // TODO:
         print("Remove row: \(row)")
     }

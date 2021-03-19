@@ -8,7 +8,7 @@
 import UIKit
 
 protocol PostCellDelegate:class {
-    func cellTapped(row: Int)
+    func dismissButtonTapped(row: Int)
     func navigateToDetail(row: Int)
 }
 
@@ -30,7 +30,7 @@ class PostCell: UITableViewCell {
     }
     
     // MARK: View Properties
-    var unseenDot: UIImage!
+    var unseenDot: UIImageView!
     var authorLabel: UILabel!
     var createdTime: UILabel!
     var titleLabel: UILabel!
@@ -44,7 +44,11 @@ class PostCell: UITableViewCell {
     // MARK: Setup Views
     func setViewProperties() {
         self.postImage = UIImageView()
-
+        self.unseenDot = UIImageView()
+        if (!self.presenter.post.value.visited) {
+            self.unseenDot.image = UIImage(diameter: 6, color: .systemBlue)
+        }
+        
         self.authorLabel = {
             let label = UILabel ()
             label.text = self.presenter.post.value.author
@@ -102,7 +106,7 @@ class PostCell: UITableViewCell {
     
     // MARK: Constraints
     func addSubviewsAndConstraints() {
-        [authorLabel, createdTime,
+        [unseenDot, authorLabel, createdTime,
          titleLabel, postImage,
          dismissButton, dismissLabel, numComments,
          goDetailFrame]
@@ -111,8 +115,9 @@ class PostCell: UITableViewCell {
                 self.addSubview(view)
                 view.translatesAutoresizingMaskIntoConstraints = false
             }
+        self.unseenDot.anchor(top: self.safeAreaLayoutGuide.topAnchor, leading: self.safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 12, left: 0, bottom: 0, right: 0))
         
-        self.authorLabel.anchor(top: self.safeAreaLayoutGuide.topAnchor, leading: self.safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 10, left: 10, bottom: 0, right: 0))
+        self.authorLabel.anchor(top: self.safeAreaLayoutGuide.topAnchor, leading: self.safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 10, left: 20, bottom: 0, right: 0))
         self.createdTime.anchor(top: self.safeAreaLayoutGuide.topAnchor, leading: self.authorLabel.trailingAnchor, bottom: nil, trailing: nil, padding: .init(top: 10, left: 10, bottom: 0, right: 0))
         
         
@@ -142,15 +147,13 @@ class PostCell: UITableViewCell {
     }
     
     @objc func dismissTapped(sender: UIButton) {
-        delegate?.cellTapped(row: self.tag)
+        delegate?.dismissButtonTapped(row: self.tag)
     }
     
     func setupDelegateGestures() {
         self.dismissButton.addTarget(self, action: #selector(dismissTapped), for: .touchUpInside)
         let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.labelTapped(_:)))
         self.titleLabel.isUserInteractionEnabled = true
-        self.goDetailFrame.isUserInteractionEnabled = true
         self.titleLabel.addGestureRecognizer(labelTap)
-        self.goDetailFrame.addGestureRecognizer(labelTap)
     }
 }

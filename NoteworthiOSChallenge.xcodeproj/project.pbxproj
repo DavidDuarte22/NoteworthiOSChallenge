@@ -26,6 +26,12 @@
 		05F21E922605302100860412 /* PostCellInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E912605302100860412 /* PostCellInteractor.swift */; };
 		05F21E9D2605372D00860412 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21E9C2605372D00860412 /* Observable.swift */; };
 		05F21EA2260537B400860412 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21EA1260537B400860412 /* PostEntity.swift */; };
+		05F21EAB2605409A00860412 /* DetailModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21EAA2605409A00860412 /* DetailModule.swift */; };
+		05F21EB8260540BF00860412 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21EB7260540BF00860412 /* DetailRouter.swift */; };
+		05F21EC9260540DC00860412 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21EC8260540DC00860412 /* DetailPresenter.swift */; };
+		05F21ECE260540E400860412 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21ECD260540E400860412 /* DetailInteractor.swift */; };
+		05F21ED3260540EC00860412 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21ED2260540EC00860412 /* DetailView.swift */; };
+		05F21EDE26054DF400860412 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F21EDD26054DF400860412 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +77,12 @@
 		05F21E912605302100860412 /* PostCellInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellInteractor.swift; sourceTree = "<group>"; };
 		05F21E9C2605372D00860412 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		05F21EA1260537B400860412 /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
+		05F21EAA2605409A00860412 /* DetailModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModule.swift; sourceTree = "<group>"; };
+		05F21EB7260540BF00860412 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		05F21EC8260540DC00860412 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		05F21ECD260540E400860412 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		05F21ED2260540EC00860412 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		05F21EDD26054DF400860412 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				05F21E6626052C3B00860412 /* Utils */,
-				05F21E7026052EB300860412 /* PostCell */,
 				05F21E402605292A00860412 /* HomeModule */,
+				05F21E7026052EB300860412 /* PostCellModule */,
+				05F21EA62605407D00860412 /* DetailModule */,
 				05F21E3C2605289600860412 /* SupportingFiles */,
 			);
 			path = NoteworthiOSChallenge;
@@ -225,11 +238,12 @@
 			isa = PBXGroup;
 			children = (
 				05F21E6826052C5500860412 /* UIView+Extension.swift */,
+				05F21EDD26054DF400860412 /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		05F21E7026052EB300860412 /* PostCell */ = {
+		05F21E7026052EB300860412 /* PostCellModule */ = {
 			isa = PBXGroup;
 			children = (
 				05F21E7526052F8D00860412 /* View */,
@@ -239,7 +253,7 @@
 				05F21E7126052F7500860412 /* Router */,
 				05F21E7626052FB700860412 /* PostCellModule.swift */,
 			);
-			path = PostCell;
+			path = PostCellModule;
 			sourceTree = "<group>";
 		};
 		05F21E7126052F7500860412 /* Router */ = {
@@ -277,6 +291,58 @@
 			isa = PBXGroup;
 			children = (
 				05F21E7E26052FCB00860412 /* PostCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05F21EA62605407D00860412 /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				05F21EB6260540B600860412 /* View */,
+				05F21EB5260540AF00860412 /* Interactor */,
+				05F21EB4260540AA00860412 /* Presenter */,
+				05F21EB3260540A400860412 /* Entity */,
+				05F21EB22605409F00860412 /* Router */,
+				05F21EAA2605409A00860412 /* DetailModule.swift */,
+			);
+			path = DetailModule;
+			sourceTree = "<group>";
+		};
+		05F21EB22605409F00860412 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				05F21EB7260540BF00860412 /* DetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		05F21EB3260540A400860412 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		05F21EB4260540AA00860412 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				05F21EC8260540DC00860412 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		05F21EB5260540AF00860412 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				05F21ECD260540E400860412 /* DetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		05F21EB6260540B600860412 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05F21ED2260540EC00860412 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -416,13 +482,19 @@
 				05F21E5F26052A0D00860412 /* HomeView.swift in Sources */,
 				05F21E7726052FB700860412 /* PostCellModule.swift in Sources */,
 				05F21E6926052C5500860412 /* UIView+Extension.swift in Sources */,
+				05F21EAB2605409A00860412 /* DetailModule.swift in Sources */,
+				05F21ECE260540E400860412 /* DetailInteractor.swift in Sources */,
 				05F21E502605298D00860412 /* HomeRouter.swift in Sources */,
 				05F21E07260527D100860412 /* AppDelegate.swift in Sources */,
 				05F21E5A260529E900860412 /* HomeInteractor.swift in Sources */,
 				05F21E8D26052FEF00860412 /* PostCellPresenter.swift in Sources */,
+				05F21EC9260540DC00860412 /* DetailPresenter.swift in Sources */,
+				05F21ED3260540EC00860412 /* DetailView.swift in Sources */,
 				05F21E9D2605372D00860412 /* Observable.swift in Sources */,
+				05F21EDE26054DF400860412 /* UIImage+Extension.swift in Sources */,
 				05F21E55260529BF00860412 /* HomePresenter.swift in Sources */,
 				05F21E8526052FDA00860412 /* PostCellRouter.swift in Sources */,
+				05F21EB8260540BF00860412 /* DetailRouter.swift in Sources */,
 				05F21EA2260537B400860412 /* PostEntity.swift in Sources */,
 				05F21E09260527D100860412 /* SceneDelegate.swift in Sources */,
 			);
