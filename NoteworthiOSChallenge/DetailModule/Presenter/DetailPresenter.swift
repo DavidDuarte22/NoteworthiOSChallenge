@@ -8,16 +8,16 @@
 import Foundation
 
 protocol DetailPresenterInterface {
-    var post: PostEntity {get set}
+    var post: Observable<PostEntity> { get set }
 }
 
 class DetailPresenter: DetailPresenterInterface {
-    var post: PostEntity
-    
+    var post: Observable<PostEntity>
+
     var detailRouter: DetailRouterInterface?
     var detailInteractor: DetailInteractorInterface?
     
     init(post: PostEntity) {
-        self.post = post
+        self.post = Observable<PostEntity>(post)
     }
 }

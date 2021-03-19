@@ -8,6 +8,7 @@
 import UIKit
 
 protocol PostCellPresenterInterface {
+    func getPostImage(from url: URL)
     var post: Observable<PostEntity> { get set }
 }
 
@@ -20,5 +21,18 @@ class PostCellPresenter: PostCellPresenterInterface {
     
     init(post: PostEntity) {
         self.post = Observable<PostEntity>(post)
+    }
+    
+    func getPostImage(from url: URL) {
+        
+        postCellInteractor?.fetchPostPhoto(from: url) { result in
+            switch result {
+            case .success(let image):
+                self.post.value.image = image
+            case .failure(let error):
+                print(error)
+                //response = Result.failure(error)
+            }
+        }
     }
 }

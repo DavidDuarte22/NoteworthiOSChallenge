@@ -23,6 +23,17 @@ class PostCell: UITableViewCell {
         setViewProperties()
         addSubviewsAndConstraints()
         setupDelegateGestures()
+        
+        guard let url = URL(string: self.presenter.post.value.thumbnail) else { return }
+        self.presenter.getPostImage(from: url)
+        
+        DispatchQueue.main.async {
+            self.presenter.post.bind { _ in
+                guard let postImage = self.presenter.post.value.image else { return }
+                self.postImage.image = postImage
+                self.setNeedsLayout()
+            }
+        }
     }
    
     required init?(coder: NSCoder) {
@@ -45,6 +56,7 @@ class PostCell: UITableViewCell {
     func setViewProperties() {
         self.postImage = UIImageView()
         self.unseenDot = UIImageView()
+        
         if (!self.presenter.post.value.visited) {
             self.unseenDot.image = UIImage(diameter: 6, color: .systemBlue)
         }

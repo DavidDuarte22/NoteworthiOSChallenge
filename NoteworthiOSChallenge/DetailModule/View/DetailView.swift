@@ -32,7 +32,7 @@ class DetailView: UIViewController {
     func setViewProperties() {
         self.authorLabel = {
             let label = UILabel ()
-            label.text = self.presenter.post.author
+            label.text = self.presenter.post.value.author
             return label
         }()
         
@@ -40,12 +40,13 @@ class DetailView: UIViewController {
             let label = UILabel ()
             label.lineBreakMode = NSLineBreakMode.byWordWrapping
             label.numberOfLines = 0
-            label.text = self.presenter.post.title
+            label.text = self.presenter.post.value.title
             label.sizeToFit()
             return label
         }()
         
         self.postImage = UIImageView()
+        self.postImage.image = self.presenter.post.value.image
     }
     
     func addSubviewsAndConstraints() {

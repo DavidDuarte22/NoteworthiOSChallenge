@@ -43,6 +43,8 @@ class HomePresenter: HomePresenterInterface {
     }
     
     func getPostDetail(post: PostEntity) {
+        let postToUpdate = postsObservable.value?.first(where: { $0.title == post.title })
+        postToUpdate?.visited = true
         self.homeRouter?.navigateToDetail(post: post)
     }
     

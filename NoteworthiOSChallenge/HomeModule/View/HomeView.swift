@@ -113,6 +113,7 @@ extension HomeView: PostCellDelegate {
     func navigateToDetail(row: Int) {
         guard let posts = self.presenter.postsObservable.value else { return }
         self.presenter.getPostDetail(post: posts[row])
+        self.tableView.reloadRows(at: [[0, row]], with: .automatic)
     }
     
     func dismissButtonTapped(row: Int) {
