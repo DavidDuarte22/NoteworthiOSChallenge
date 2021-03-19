@@ -14,7 +14,8 @@ import UIKit
 //- Number of comments
 //- Unread status
 
-struct PostEntity: Codable {
+/// TODO: Review desition!  Struct changed to class (reference type) for update the image once has been dowloaded
+class PostEntity: Codable {
     
     let title: String
     let author: String
@@ -23,9 +24,15 @@ struct PostEntity: Codable {
     let numberComments: Int //num_comments
     var visited: Bool
     
+    var image: UIImage?
+    
     enum CodingKeys: String, CodingKey {
         case title, author, thumbnail, visited
         case entryDate = "created"
         case numberComments = "num_comments"
+    }
+    
+    func loadImage(image: UIImage) {
+        self.image = image
     }
 }
